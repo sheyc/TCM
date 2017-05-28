@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+	<title>中医医疗管理系统</title>
+	<meta name="keyword" content="中医，诊疗，脉诊">
+	<meta name="description" content="这是一个中医诊疗网站">	
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/public_layout.css">
+	<link rel="stylesheet" href="./css/public_content.css">
+	<link rel="stylesheet" href="./css/learn.css">
+	<script type="text/javascript" src="./js/learn.js"></script>
+	<script src="./js/echarts.js"></script>
+	<script src="./js/theme/dark.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<ul class="top_ul_style">
+				<li><img src="./images/phone.jpg" alt="phone"></li>
+				<li class="top_li_style"><a href="">手机中医脉诊网</a></li>
+				<li><img src="./images/star.gif" alt="phone"></li>
+				<li class="top_li_style">收藏中医脉诊网</li>
+				<li><img src="./images/weibo.gif" alt="phone"></li>
+				<li class="top_li_style"><a href="">关注中医脉诊官方微博</a></li>
+			</ul>
+		</div>
+		<div id="pagebody">
+			<div id="lefter">
+			</div>
+			<div id="contenter">
+				<div id="toper">
+					<ul class="top_ul">
+						<li><img class="top_li_img" src="./images/TCM_logo.jpg" alt="phone"></li>
+						<li class="top_li">TCM Management System</li>
+						<li><img class="top_li_img" src="./images/tel.jpg" alt="phone"></li>
+						<li class="top_li">400-800-8888</li>
+					</ul>				
+				</div>
+				<div id="selecter">
+					<ul class="selecter_ul_style">						
+						<li><a href="hospital_home.html">首页</a></li>
+						<li><a href="hospital_manage.html">病患管理</a></li>
+						<li><a href="hospital_analysis.html">数据分析</a></li>
+						<li><a href="hospital_learn.html">医疗学习</a></li>
+						<li><a href="hospital_contact.html">联系我们</a></li>
+						<li><a href="hospital_register.html">登录</a></li>
+					</ul>
+				</div>
+				<div id="middler">
+					<div class="learn_cut">
+						<div class="learn_content">
+							<div class="learn_content_left_l">							
+							</div>
+							<div class="learn_content_middle">
+								<div class="learn_content_top">
+								</div>
+								<div class="learn_content_line" id="learn_pulse">								
+								 <script type="text/javascript">
+								 
+									// 基于准备好的dom，初始化echarts实例
+									var myChart = echarts.init(document.getElementById('learn_pulse'),'dark');
+
+									// 指定图表的配置项和数据
+								   function randomData() {
+										now = new Date(+now + oneDay);
+										value = value + Math.random() * 21 - 10;
+										return {
+											name: now.toString(),
+											value: [
+												[now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'),
+												Math.round(value)
+											]
+										}
+									}
+									var data = [];
+									var now = +new Date(1997, 9, 3);
+									var oneDay = 24 * 3600 * 1000;
+									var value = Math.random() * 1000;
+									for (var i = 0; i < 1000; i++) {
+										data.push(randomData());
+									}
+
+
+
+									var option = {
+										title: {
+											text: '脉象信号'
+										},
+										tooltip: {
+											trigger: 'axis',
+											formatter: function (params) {
+												params = params[0];
+												var date = new Date(params.name);
+												return date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear() + ' : ' + params.value[1];
+											},
+											axisPointer: {
+												animation: false
+											}
+										},
+										xAxis: {
+											type: 'time',
+											splitLine: {
+												show: false
+											}
+										},
+										yAxis: {
+											type: 'value',
+											boundaryGap: [0, '100%'],
+											splitLine: {
+												show: false
+											}
+										},
+										series: [{
+											name: '模拟数据',
+											type: 'line',
+											showSymbol: false,
+											hoverAnimation: false,
+											data: data
+										}]
+									};
+									setInterval(function () {
+
+										for (var i = 0; i < 5; i++) {
+											data.shift();
+											data.push(randomData());
+										}
+
+										myChart.setOption({
+											series: [{
+												data: data
+											}]
+										});
+									}, 1000);
+									// 使用刚指定的配置项和数据显示图表。
+									myChart.setOption(option);
+								</script>
+								</div>
+								<div class="learn_content_foot">
+								</div>
+							</div>
+							<div class="learn_content_right_l">
+								<div class="introduce">
+									<p>脉象要素，指脉象的基本组成部分，包括位、数、形、势等四个方面。</p>
+								</div>
+								<div class="right_down"><img class="img_size" src="./images/pulse.gif" alt="切"></div>
+							</div>
+						</div>
+						<div class="vertical">
+						</div>
+						<div class="learn_content">							
+							<div class="learn_content_left_r">
+								<div class="introduce">
+								<p>诊脉常用指法有举法、按法、寻法、总按和单诊，定位寸、关、尺三个穴位。</p>
+								</div>
+								<div class="left_down"><img class="img_size" src="./images/pulse.gif" alt="切"></div>
+							</div>
+							<div class="learn_content_middle">
+								<div class="learn_content_top">
+								
+								</div>
+								<div class="learn_content_line" id="learn_finger">								
+								<script type="text/javascript">
+									// 基于准备好的dom，初始化echarts实例
+									var myChart = echarts.init(document.getElementById('learn_finger'),'dark');
+
+									// 指定图表的配置项和数据
+								   function randomData() {
+										now = new Date(+now + oneDay);
+										value = value + Math.random() * 21 - 10;
+										return {
+											name: now.toString(),
+											value: [
+												[now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'),
+												Math.round(value)
+											]
+										}
+									}
+									var data = [];
+									var now = +new Date(1997, 9, 3);
+									var oneDay = 24 * 3600 * 1000;
+									var value = Math.random() * 1000;
+									for (var i = 0; i < 1000; i++) {
+										data.push(randomData());
+									}
+
+
+
+													var option = {
+										title: {
+											text: '指法信号'
+										},
+										tooltip: {
+											trigger: 'axis',
+											formatter: function (params) {
+												params = params[0];
+												var date = new Date(params.name);
+												return date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear() + ' : ' + params.value[1];
+											},
+											axisPointer: {
+												animation: false
+											}
+										},
+										xAxis: {
+											type: 'time',
+											splitLine: {
+												show: false
+											}
+										},
+										yAxis: {
+											type: 'value',
+											boundaryGap: [0, '100%'],
+											splitLine: {
+												show: false
+											}
+										},
+										series: [{
+											name: '模拟数据',
+											type: 'line',
+											showSymbol: false,
+											hoverAnimation: false,
+											data: data
+										}]
+									};
+									setInterval(function () {
+
+										for (var i = 0; i < 5; i++) {
+											data.shift();
+											data.push(randomData());
+										}
+
+										myChart.setOption({
+											series: [{
+												data: data
+											}]
+										});
+									}, 1000);
+									// 使用刚指定的配置项和数据显示图表。
+									myChart.setOption(option);
+								</script>
+								</div>
+								<div class="learn_content_foot">
+								
+								</div>
+							</div>
+							<div class="learn_content_right_r"></div>
+						</div>
+					</div>
+					<div class="center_bar">
+						<div class="horizon">
+						</div>
+						<div class="certer">
+						</div>
+						<div class="horizon">
+						</div>
+					</div>
+					<div class="learn_cut">
+						<div class="learn_content">						
+							<div class="learn_content_left_l">
+								
+							</div>
+							<div class="learn_content_middle" id="learn_tongue">
+								<ul id="pic">
+									<li><img src="./images/tongue/tongue01.jpg" alt=""></li>
+									<li><img src="./images/tongue/tongue02.jpg" alt=""></li>
+									<li><img src="./images/tongue/tongue03.jpg" alt=""></li>
+									<li><img src="./images/tongue/tongue04.jpg" alt=""></li>
+									<li><img src="./images/tongue/tongue05.jpg" alt=""></li> 
+								</ul>
+								<ol id="list">
+									<li class="on">1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ol>
+							</div>
+							<div class="learn_content_right_l">
+								<div class="right_up"><img class="img_size" src="./images/look.gif" alt="望"></div>
+								<div class="introduce">
+									<p>观察舌头的色泽、形态的变化来辅助诊断及鉴别的一个简单有效的方法。</p>
+								</div>							
+							</div>
+						</div>
+						<div class="vertical">
+						</div>
+						<div class="learn_content">
+							<div class="learn_content_left_r">
+								<div class="left_up"><img class="img_size" src="./images/listen.gif" alt="闻"></div>
+								<div class="introduce">
+									<p>主要是听患者语言气息的高低、强弱、清浊、缓急等变化，以分辨病情的虚实寒热。</p>
+								</div>								
+							</div>
+							<div class="learn_content_middle" id="learn_sound">
+								<embed src="E:/KuGou/李炜 - 剑魂.mp3" width="300" height="100" loop="false" autostart="false"> 
+								</embed> 
+							</div>
+							<div class="learn_content_right_r">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="bottomer">
+					<p class="bottom_page">
+						Copyright @ 2017 she all rights reserved</br>
+						客服热线：400-800-8888</br>
+						(ICP)备案编号：川ICP备12345678号 川卫网审（2010）第006号</br>
+						文明办网文明上网投诉电话：010-57476997 举报邮箱：tousu@zhzyw.org
+					</p>
+				</div>
+			</div>
+			<div id="righter">
+			</div>	
+		</div>				
+	</div>
+</body>
+</html>

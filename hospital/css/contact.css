@@ -1,0 +1,34 @@
+#middler .contact_top{
+	display:block;
+	margin-top:0px;
+	padding:30px 200px 0px 200px;
+	font-size:20px;
+	color:#6c9a69;
+}
+#middler .contact_content{
+	margin:0;
+	padding:10px 200px;
+	text-align:left;
+	line-height:25px;
+	color:#536974;
+}
+.contact_img{
+	margin:0;
+	padding-top:3px;
+}
+.contact_hr{
+	display:block;
+	float:left;	
+}
+.contact_hr .hr0{
+	width:100%; 
+	size:100px; 
+	color:#6c9a69;
+	border-style:solid;	
+}
+.hr1{
+	width:100%; 
+	size:41px; 
+	color:#2f435b; 
+	border-style:dotted;
+}

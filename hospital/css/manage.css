@@ -1,0 +1,228 @@
+#manage_top{
+	margin:0;
+	padding:0;
+	height:40px;
+	background-image:url(../images/wenli.jpg);	
+}
+.manage_logo{
+	margin:0;
+	padding:0;
+	height:40px;
+	width:250px;
+	padding-left:50px;
+}
+#manage_menu{
+	margin:0 10px;
+	padding:0;
+	height:30px;
+	border-style:outset;
+	border-radius:20px;
+	background-color:#7f7f7f;
+}
+.manage_menu_li{
+	margin:0;
+	padding:0;
+}
+.manage_menu_li li{
+	margin:0;
+	padding-left:30px;
+	float:left;
+	list-style-type:none;
+}
+.manage_menu_li li a{
+	width:150px;
+	height:30px;
+	line-height:30px;
+	color:#FFF;
+	font-size:20px;
+	display:block;
+	text-align:center;
+	text-decoration:none; 
+}
+.manage_menu_li li a:hover{ 
+width:150px;
+height:30px;
+line-height:30px;
+color:#fff;
+background:#5f5f5f;
+}
+#find{
+	margin:0;
+	padding-top:10px;
+	height:30px;
+}
+.input_border{
+    border-radius: 5px;
+	border-color:#999;
+	border-style:inset;
+}
+.button_border{
+    border-radius: 5px;
+	border-color:#fff;
+	border-style:outset;
+	background-color:#4291d7;
+}
+
+#form{
+	margin:0;
+	padding-top:10px;
+	height:340px;
+}
+.manage_table{
+	margin:0px auto;
+	border-spacing : 10px;
+	border-collapse : collapse; 
+	border:2px solid #666;
+}
+.table_head{
+	background-color:#4291d7;
+}
+.table_head th{
+	padding:5px 10px;
+	text-align:center;
+	font-size:18px;
+	border:2px solid #666;
+}
+.table_tr td{
+	font-size:15px;
+	text-align:center;
+	padding:5px 10px;
+	border:1px solid #666;
+}
+#cut_page{ 
+	padding-right: 3px; 
+	padding-left: 3px; 
+	font-size: 80%;
+	padding-bottom: 5px; 
+	margin: 3px; color: #a0a0a0; 
+	padding-top: 5px;
+	background-color: #000; 
+	text-align: center 
+} 
+#cut_page a { 
+	border-right: #909090 1px solid; 
+	padding-right: 5px; 
+	background-position: 50% bottom; 
+	border-top: #909090 1px solid;
+	padding-left: 5px; 
+	background-image: url(bar.gif); 
+	padding-bottom: 2px;
+	border-left: #909090 1px solid; 
+	color: #c0c0c0; 
+	margin-right: 3px;
+	padding-top: 2px; 
+	border-bottom: #909090 1px solid; 
+	text-decoration: none 
+} 
+#cut_page a:hover { 
+	border-right: #f0f0f0 1px solid; 
+	border-top: #f0f0f0 1px solid;
+	background-image: url(invbar.gif); 
+	border-left: #f0f0f0 1px solid;
+	color: #ffffff; 
+	border-bottom: #f0f0f0 1px solid; 
+	background-color: #404040 
+} 
+#cut_page a:active { 
+	border-right: #f0f0f0 1px solid; 
+	border-top: #f0f0f0 1px solid; 
+	background-image: url(invbar.gif); 
+	border-left: #f0f0f0 1px solid; 
+	color: #ffffff; 
+	border-bottom: #f0f0f0 1px solid; 
+	background-color: #404040 
+} 
+#cut_page span.current { 
+	border-right: #ffffff 1px solid; 
+	padding-right: 5px; 
+	border-top: #ffffff 1px solid;
+	padding-left: 5px; 
+	font-weight: bold; 
+	padding-bottom: 2px;
+	border-left: #ffffff 1px solid; 
+	color: #ffffff; 
+	margin-right: 3px; 
+	padding-top: 2px; 
+	border-bottom: #ffffff 1px solid; 
+	background-color: #606060 
+} 
+#cut_page span.disabled { 
+	border-right: #606060 1px solid; 
+	padding-right: 5px; 
+	border-top: #606060 1px solid;
+	padding-left: 5px; 
+	padding-bottom: 2px; 
+	border-left: #606060 1px solid; 
+	color: #808080; 
+	margin-right: 3px; 
+	padding-top: 2px; 
+	border-bottom: #606060 1px solid 
+}
+#add{
+	margin:0;
+	padding:10px 0;
+	font-size:14px;
+	text-align:center;
+	color:#404040;
+}
+.add_input{
+	margin:10px 0;
+	padding:3px 0;
+	border-style:inset;
+	border-radius:5px;
+}
+.add_button{
+	margin:10px 10px;
+	width:50px;
+	height:25px;
+	padding:0;
+	border-radius:5px;
+	font-size:16px;
+	background-color:#4291d7;
+}
+.modify_button{
+	margin:0 5px;
+	padding:0;
+	border-radius:4px;
+	background-color:#4291d7;
+}
+#pawd{
+	margin:0;
+	padding:10px 0;
+	font-size:14px;
+	
+}
+#pawd form{
+	text-align:center;
+}
+.password_modify{
+	margin:10px 200px;
+	font-size:20px;
+	font-weight:800;
+}
+.reminder{
+	margin:10px 200px;
+	font-size:12px;
+	color:#4291d7
+}
+.pawd_button{
+	margin-top:10px;
+	margin-right:110px;
+	height:30px;
+	width:100px;
+	font-size:15px;
+}
+#pawd a{
+	font-size:12px;
+	color:green;
+	text-decoration:none
+}
+#pawd a:hover{
+	font-size:12px;
+	color:yellow;
+	text-decoration:none
+}
+#pawd span{
+	font-size:12px;
+	color:#888;
+}

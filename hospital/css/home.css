@@ -1,0 +1,39 @@
+.content_div{
+	margin:0;
+	padding:10px;
+	height:180px;
+}
+.h1_left{
+	margin:0;
+	padding:10px;
+	float:left;
+	color:#53a3e2;
+}
+.h1_right{
+	margin:0;
+	padding:10px;
+	float:right;
+	color:#53a3e2;
+}
+.picture_left{
+	margin:0;
+	padding:10px;
+	float:left;
+	width:30%; 
+	height:30%;
+}
+.picture_right{
+	margin:0;
+	padding:10px;
+	float:right;
+	width:30%; 
+	height:30%;
+}
+.home_content{
+	text-indent:2em;
+	margin:30px;
+	padding:2xp;
+	color:#67654c;
+	font-size:15px;
+	line-height:20px;
+}

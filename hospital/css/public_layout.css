@@ -1,0 +1,56 @@
+#container{
+	width:100%;
+}
+#header{
+	height:27px;
+	margin:0 auto;
+	background-image:url(../images/topbar.jpg);
+	background-repeat:repeat;
+	background-attachment:fixed;
+	border-bottom:3px;
+	border-bottom-style:ridge;
+}
+#pagebody{
+	height:730px;
+	margin:0;
+}
+#lefter{
+	height:730px;
+	width:150px;
+	float:left;
+	background-image:url(../images/border4.jpg);
+}
+#contenter{
+	height:730px;
+	width:1027px;
+	float:left;
+	border:0px 3px 0px 3px;
+	border-left-style:ridge;
+	border-right-style:ridge;	
+}
+#righter{
+	height:730px;
+	width:150px;
+	float:right;
+	background-image:url(../images/border4.jpg);	
+}
+#toper{
+	height:80px;
+	background:#4291d7;	
+}
+#selecter{
+	height:50px;
+	background:#2b2b2b;
+	margin:0;
+	padding:0;
+}
+#middler{
+	height:500px;
+	background-image:url(../images/draw.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#bottomer{
+	height:100px;
+	background-image:url(../images/bottom_bar.jpg)
+}
